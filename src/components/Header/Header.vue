@@ -1,12 +1,12 @@
 <template>
   <v-app-bar class="main-header" height="64" fixed color="primary" dark>
     <v-btn icon class="mx-1" @click.stop="TOGGLE_DRAWER">
-      <template v-if="DRAWER_STATE">
-        <v-icon style="font-size: 28px;">mdi-arrow-left</v-icon>
-      </template>
-      <template v-else>
-        <v-icon style="font-size: 28px;">mdi-menu</v-icon>
-      </template>
+      <!-- <template v-if="DRAWER_STATE"> -->
+      <!-- <v-icon style="font-size: 28px;">mdi-arrow-left</v-icon> -->
+      <!-- </template> -->
+      <!-- <template v-else> -->
+      <v-icon style="font-size: 28px;">mdi-menu</v-icon>
+      <!-- </template> -->
     </v-btn>
     <v-toolbar-title>Vue Material Admin</v-toolbar-title>
     <v-spacer></v-spacer>

@@ -12,10 +12,24 @@
   >
     <div class="v-list">
       <router-link
-        class="v-list-item v-list-item--link grey--text text-sm-h6"
+        class="v-list-item v-list-item--link grey--text text-h5 font-weight-medium"
         to="/"
       >
-        ShopFlex
+        <template v-if="DRAWER_STATE">
+          <div class="d-flex">
+            <span class="primary--text">
+              Shop
+            </span>
+            <span>
+              Flex
+            </span>
+          </div>
+        </template>
+        <template v-else>
+          <span class="primary--text">
+            SF
+          </span>
+        </template>
       </router-link>
     </div>
 
