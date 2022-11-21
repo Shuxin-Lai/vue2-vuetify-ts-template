@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { userModule } from './account'
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
   // @ts-ignore
-  namespace: true,
+  namespaced: true,
+  modules: {
+    user: userModule,
+  },
   state: {
     drawer: true,
   },
@@ -25,5 +29,7 @@ const store = new Vuex.Store({
     },
   },
 })
+
+store.subscribe(({ type, payload }) => {})
 
 export default store
