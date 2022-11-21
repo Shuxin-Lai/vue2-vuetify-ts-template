@@ -3,11 +3,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'App',
-  };
+export default {
+  name: 'App',
+}
 </script>
 
-<style src="./styles/app.scss" lang="scss"/>
-
-
+<style src="./styles/app.scss" lang="scss" />
