@@ -1,22 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Layout from '@/components/Layout/Layout'
+import Layout from '@/components/Layout/Layout.vue'
 
 // Pages
-import Dashboard from '@/pages/Dashboard/Dashboard'
-import Typography from '@/pages/Typography/Typography'
-import Tables from '@/pages/Tables/Basic'
-import Notifications from '@/pages/Notifications/Notifications'
-import Icons from '@/pages/Icons/Icons'
-import Charts from '@/pages/Charts/Charts'
-import Maps from '@/pages/Maps/Google'
-import Error from '@/pages/Error/Error'
-import Login from '@/pages/Login/Login'
+import Dashboard from '@/pages/Dashboard/Dashboard.vue'
+import Typography from '@/pages/Typography/Typography.vue'
+import Tables from '@/pages/Tables/Basic.vue'
+import Notifications from '@/pages/Notifications/Notifications.vue'
+import Icons from '@/pages/Icons/Icons.vue'
+import Charts from '@/pages/Charts/Charts.vue'
+import Maps from '@/pages/Maps/Google.vue'
+import Error from '@/pages/Error/Error.vue'
+import Login from '@/pages/Login/Login.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/login',
@@ -74,3 +74,5 @@ export default new Router({
   ],
   mode: 'history',
 })
+
+export default router
